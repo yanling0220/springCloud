@@ -17,10 +17,13 @@ public class ConfigClientApplication {
 	@Value("${foo}")
 	String foo;
 
+	@Value("${democonfigclient.message}")
+	String message;
+
 	@Value("${server.port}")
 	String port;
 	@RequestMapping(value = "/hi")
 	public String hi(){
-		return foo+" : " +port;
+		return foo+" : " +port +" : "+message;
 	}
 }
