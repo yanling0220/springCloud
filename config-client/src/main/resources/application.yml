@@ -12,3 +12,6 @@ spring:
     config:
       label: master
       profile: dev
+  rabbitmq:
+    host: localhost
+    port: 15627
